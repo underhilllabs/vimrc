@@ -1,6 +1,6 @@
 set nocompatible
 " Colors!!
-set t_Co=251
+set t_Co=256
 
 set backupdir=~/.vim/backup_dir
 set directory=~/.vim/swap_dir
