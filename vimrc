@@ -48,6 +48,8 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 "print out function names and line numbers
 nnoremap <leader>fp :g/function /p<CR>
+"clear the search register
+nnoremap <silent> <leader>/ :nohlsearch<CR>
 "indentation
 set smartindent
 set tabstop=2
@@ -70,7 +72,6 @@ syntax on
 set hidden "Allow modified buffers to be put in background
 "autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
-nmap <leader>dc !drush cc all
 nnoremap <leader>nn :set nonumber!<cr>
 cmap w!! %!sudo tee > /dev/null %
 
