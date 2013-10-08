@@ -43,7 +43,7 @@ set number
 
 let mapleader = ","
 
-map <leader>nt :execute 'NERDTreeToggle ' . getcwd()<CR>
+nnoremap <leader>nt :execute 'NERDTreeToggle ' . getcwd()<CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>nn :set nonumber!<CR>
