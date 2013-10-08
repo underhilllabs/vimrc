@@ -46,6 +46,12 @@ let mapleader = ","
 map <leader>nt :execute 'NERDTreeToggle ' . getcwd()<CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>nn :set nonumber!<CR>
+nnoremap <leader>gt :GitGutterToggle<CR>
+nnoremap <leader>ggt :GitGutterToggle<CR>
+nnoremap <leader>ggn :GitGutterNextHunk<CR>
+nnoremap <leader>ggp :GitGutterPrevHunk<CR>
+
 "print out function names and line numbers
 nnoremap <leader>fp :g/function /p<CR>
 "clear the search register
@@ -72,7 +78,6 @@ syntax on
 set hidden "Allow modified buffers to be put in background
 "autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
-nnoremap <leader>nn :set nonumber!<cr>
 cmap w!! %!sudo tee > /dev/null %
 
 "use unite.vim like ctrl-p
