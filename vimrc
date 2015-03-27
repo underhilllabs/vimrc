@@ -14,7 +14,7 @@ set hlsearch
 " colors desert256
 " colors wombat256
 " colors xoria256
-colors elflord
+" colors elflord
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -81,12 +81,11 @@ autocmd VimEnter * wincmd p
 cmap w!! %!sudo tee > /dev/null %
 
 "use unite.vim like ctrl-p
-nnoremap <C-p> :Unite file_rec/async<cr>
-let g:airline_powerline_fonts=1
+"nnoremap <C-p> :Unite file_rec/async<cr>
+"let g:airline_powerline_fonts=1
 
 set undodir=~/.vim/undodir
 set undofile
 set undolevels=1000 "maximum number of changes that can be undone
 set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 
-set path+=~/projects/openmedia/**
